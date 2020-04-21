@@ -1,0 +1,23 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2hyaW9tIiwiaWF0IjoxNTg3NDY1NTY3LCJleHAiOjE1ODc0NjU1ODJ9.yFlURJkRwWTLZ_kKgJVVW86UISoUE3hknQDD3saeGlQ
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2hyaW9tIiwiaWF0IjoxNTg3NDY1OTkwfQ.Dh1f5PQ3HjTafX9Q7qcnjU-FiqUYqkMAK3qnJ3GmFKI"
+}
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2hyaW9tIiwiaWF0IjoxNTg3NDY1OTkwfQ.Dh1f5PQ3HjTafX9Q7qcnjU-FiqUYqkMAK3qnJ3GmFKI"
+}
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username":"Shriom"
+}
